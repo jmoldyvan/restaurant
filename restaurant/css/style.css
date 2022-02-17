@@ -1,0 +1,561 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+  background: rgb(248, 248, 248);
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header{
+  height: 900px;
+  background: url(new_bowl.jpg);
+  /* background-size: cover; */
+}
+
+.icon_03{
+  display: none;
+}
+
+nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  margin:0% 5%;
+  padding: 2% 5% 1% 5%;
+  background: white;
+}
+
+.icon_01,
+nav .list_01{
+  display: flex;
+  flex-flow: row;
+  width: 50%;
+}
+
+.list_01 li a{
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+nav .list_01{
+  justify-content: space-between;
+}
+
+.icon_01{
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+/******************************************
+/* welcome
+/*******************************************/
+
+
+.welcome .button_1{
+  display: inline-block;
+}
+
+.welcome{
+  width: 50%;
+  height: 80%;
+  margin:5% 10%;
+  display: flex;
+  flex-flow:column wrap;
+  align-items: flex-start;
+  
+}
+
+.social_icon{
+  display: flex;
+  margin: 5% 0 0 0 ;
+  justify-content: start space-around;
+  border: 1px solid red
+}
+
+.welcome h1{
+  font-size: 10rem;
+  margin: 0 0 2% 0;
+  display: flex;
+  flex-flow: column;
+  line-height: 90%;
+}
+
+.welcome form{
+  margin: 5% 0;
+  width: 90%;
+  height: 10rem;
+}
+
+.welcome input{
+  width: 70%;
+  height: 5.5rem;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.button_1{
+  font-size: 2rem;
+  margin: 0px 0 0 -2px;
+  color: white;
+  background: rgb(211, 137, 0);
+  padding: 15px 45px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+
+/******************************************
+/* discover
+/*******************************************/
+
+.disc_contain{
+  height: 800px;
+  background:url(mcds.jpg) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+  align-items: right;
+}
+
+.discovery{
+  display: flex;
+  width: 40%;
+  margin: 5%;
+  flex-flow: column;
+}
+
+.discovery h3{
+  font-size: 10rem;
+  margin: 0 0 30px 0 ;
+}
+
+.discovery span,
+.title_sect span,
+.customer_sect span{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.discovery p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+}
+
+.button_2{
+  text-align: center;
+  font-size: 2rem;
+  width: 20rem;
+  margin: 5% 0;
+  color: white;
+  background: rgb(211, 137, 0);
+  padding: 15px 30px;
+  border-radius: 5%;
+  
+}
+
+
+/******************************************
+/* specility
+/*******************************************/
+
+.special_contain{
+  height: 500px;
+  background: rgb(239,237,238);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.special_menu{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+.title_sect{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.special_contain ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.title_sect h2{
+  font-size: 10rem;
+  margin: 0 0 5% 0;
+}
+
+.special_contain ul li a{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/******************************************
+/* specility images
+/*******************************************/
+
+.special_img{
+  height: 900px;
+  background: rgb(239,237,238);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-evenly;
+}
+
+.special_img a{
+  margin: 0%;
+}
+
+.special_img a img{
+  width:400px;
+  height: 400px;
+}
+
+.img_01,
+.img_02{
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 50%;
+}
+
+
+/******************************************
+/* hours
+/*******************************************/
+
+.opening_hours{
+  background: url(knife.jpeg) no-repeat;
+  background-size: cover;
+  height: 1200px;
+
+}
+
+.hours{
+  margin: 2%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.bowl_food{
+  height: 50%;
+  width: 100%;
+  margin: 0% 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.opening_hours img{
+  height: 50rem;
+  width: 70rem;
+}
+
+.opening_hours .title_sect{
+  padding: 100px 0 0 0;
+}
+
+.opening_hours .title_sect p{
+  margin: 0% 0;
+  font-size: 3rem;
+  line-height: 4rem;
+
+}
+
+.opening_hours .title_sect span{
+  color: rgb(167, 109, 1);
+}
+
+.opening_hours .title_sect h4{
+  color: rgb(167, 109, 1);
+  font-size: 5rem;
+  margin: 0;
+}
+
+.hours span{
+  margin: 1% 0 0 -10%;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.hours h6{
+  line-height: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-size: 4rem;
+}
+
+/******************************************
+/* CUSTOMER SAY
+/*******************************************/
+
+.cust_container{
+  height: 900px;
+  background: rgb(247, 242, 175);
+  border-radius: 40%;
+}
+
+.customer_sect img{
+  width: 15%;
+  border-radius: 50%;
+}
+
+.customer_sect{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 3% 0;
+}
+
+.customer_sect h2{
+  font-size: 10rem;
+  margin: 2% 0;
+}
+
+.cust_container .customer_sect img+span{
+  margin: 1% 0;
+  color: gray;
+}
+
+.cust_container .customer_sect p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 4rem;
+  text-align: center;
+  width: 70%;
+}
+
+
+
+
+
+@media all and (max-width: 1001px){
+
+
+
+  header{
+    background-size: cover;
+
+  }
+
+  nav *,
+  .icon_01{
+    display: none;
+  }
+
+  nav{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  nav .icon_03{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+  
+/******************************************
+/* CUSTOMER SAY
+/*******************************************/
+
+
+  .welcome{
+    width: 100%;
+    margin: 15% 0;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+
+  }
+  .welcome h1{
+    font-size: 5rem;
+    margin: 5% 0;
+  }
+
+  .welcome input{
+    display: none;
+  }
+
+  .welcome form{
+    display: flex;
+    justify-content: center;
+    }
+
+  .button_1{
+    margin: 0 auto;
+    padding: 35px 45px;
+    border-radius: 5%;
+  }
+
+
+/******************************************
+/* discover
+/*******************************************/
+
+.disc_contain{
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.discovery{
+  width: 60%;
+}
+
+.discovery h3{
+  font-size: 5rem;
+  margin: 0 0 30px 0 ;
+}
+
+.discovery p{
+  width: 90%;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+
+/******************************************
+/* discover
+/*******************************************/
+
+.special_contain{
+  height: 300px;
+}
+
+.title_sect h2{
+  font-size: 5rem;
+}
+
+.special_contain ul{
+  width: 100%;
+  text-decoration: underline;
+}
+
+.special_contain ul li a{
+  color: gray;
+}
+
+/******************************************
+/*special image
+/*******************************************/
+
+.special_img{
+  height: 900px;
+  flex-flow: column nowrap;
+  
+}
+
+.special_img a img{
+  width:200px;
+  height: 200px;
+}
+
+.special_img a{
+  height: 200px;
+  border: 2px grey solid;
+}
+
+.img_01,
+.img_02{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  flex-basis: 20%;
+  /* border-bottom: 2px grey solid; */
+}
+
+/******************************************
+/*hours
+/*******************************************/
+
+.opening_hours{
+  height: 900px;
+
+}
+
+.bowl_food{
+  height: 40%;
+  width: 100%;
+  margin: 0% 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.opening_hours img{
+  height: 25rem;
+  width: 35rem;
+}
+
+.hours span{
+  margin: 1% 0 0 -4%;
+  font-size: 2rem;
+  line-height: 5rem;
+ font-weight: 600;
+}
+
+.hours h6{
+  line-height: 0rem;
+  margin: 0;
+  font-size: 2.1rem;
+  
+}
+
+/******************************************
+/*cust
+/*******************************************/
+
+.customer_sect h2{
+  font-size: 5rem;
+  margin: 10% 0;
+}
+
+.customer_sect img{
+  width: 55%;
+  border-radius: 50%;
+}
+
+
+}
